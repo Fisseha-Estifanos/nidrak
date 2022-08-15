@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # vim: set fenc=utf8 ts=4 sw=4 et :
 #
-# Layer 2 network neighbourhood discovery tool
+# Layer 2 network neighborhood discovery tool
 # written by Benedikt Waldvogel (mail at bwaldvogel.de)
 
 from __future__ import absolute_import, division, print_function
@@ -58,7 +58,9 @@ def scan_and_print_neighbors(net, interface, timeout=5):
 
 
 def main(interface_to_scan=None):
-    if os.geteuid() != 0:
+    #if os.geteuid() != 0: # TODO : this line was the original script, but it threw an error
+    # AttributeError: module 'os' has no attribute 'geteuid'. Did you mean: 'getpid'?
+    if os.getpid() != 0:
         print('You need to be root to run this script', file=sys.stderr)
         sys.exit(1)
 
