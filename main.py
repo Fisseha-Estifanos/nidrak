@@ -7,3 +7,4 @@ from network_helpers import *
 
 # run the ping command
 ping()
+

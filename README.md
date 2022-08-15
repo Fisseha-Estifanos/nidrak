@@ -1,2 +1,3 @@
 # nidrak
-A network scanner programe 
+<<<<<<< HEAD
+A network scanner programme 
