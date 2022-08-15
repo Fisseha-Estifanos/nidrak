@@ -4,6 +4,10 @@
 # Layer 2 network neighborhood discovery tool
 # written by Benedikt Waldvogel (mail at bwaldvogel.de)
 
+# this code was taken from
+# https://github.com/bwaldvogel/neighbourhood/blob/main/neighbourhood.py
+
+
 from __future__ import absolute_import, division, print_function
 import logging
 import scapy.config
