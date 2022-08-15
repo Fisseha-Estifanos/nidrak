@@ -62,7 +62,7 @@ def main(interface_to_scan=None):
     # AttributeError: module 'os' has no attribute 'geteuid'. Did you mean: 'getpid'?
     if os.getpid() != 0:
         print('You need to be root to run this script', file=sys.stderr)
-        sys.exit(1)
+        #sys.exit(1)
 
     for network, netmask, _, interface, address, _ in scapy.config.conf.route.routes:
 
